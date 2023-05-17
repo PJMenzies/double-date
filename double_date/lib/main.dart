@@ -1,4 +1,9 @@
-// import 'package:double_date/initial_setup.dart';
+// Tools Used:
+// Firebase
+// Flutter
+// qr_flutter 4.0.0
+// mobile_scanner: 3.2.0
+
 import 'package:double_date/week_form.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -40,7 +45,7 @@ class MyApp extends StatelessWidget {
         '/profile': (context) => ExampleForm(userID: getUID()),
         '/verify-email': (context) => ExampleForm(userID: getUID()),
       },
-      title: 'Flutter Demo',
+      title: 'Login',
       theme: ThemeData(
         // This is the theme of your application.
         //

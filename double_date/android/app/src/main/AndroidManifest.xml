@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.double_date">
    <application
-        android:label="double_date"
+        android:label="Double Date"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

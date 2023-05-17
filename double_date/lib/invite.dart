@@ -27,7 +27,9 @@ class _Invite extends State<Invite> {
     //   Navigator.push(context, MaterialPageRoute(builder: (context) => Scheduled(dateID: widget.dateID)));
     // }
     for (Map<String, dynamic> d in doc['attendees']) {
-      result.add(d['id']); // Make it name
+      DocumentSnapshot userDoc = await FirebaseFirestore.instance.collection('schedule').doc(d['id']).get();
+      result.add(userDoc['name']);
+      // result.add(d['id']); // Make it name
     }
     return result;
   }
